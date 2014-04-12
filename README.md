@@ -4,7 +4,7 @@ talk-like-a-congressman
 n-gram models trained on congressional public speech data.
 
 I'm working with this data as part of the
-[lazer lab](www.lazerlab.net) at Northeastern University, so I decided
+[lazer lab](http://www.lazerlab.net) at Northeastern University, so I decided
 to have a little fun with it.
 
 ## To Use:
