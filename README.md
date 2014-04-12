@@ -37,7 +37,22 @@ m.generate(100)
 ```
 should output something like:
 
-``` their continued success we must find better ways to reward teacher
+```
+they now have better access to technology in the affordable care
+act is already paying dividends for millions of americans with more to
+come children can no longer have the records to defend themselves
+similarly at least some irs agents have taken the position that anyone
+who claimed edc benefits as a certainly as a participant in a recent
+report from the leaders and residents of the pre jobs act with respect
+to the united states and that met the program s criteria for creating
+jobs and economic opportunity for virgin islanders the increase of our
+nation i believe the path'
+```
+
+or
+
+```
+their continued success we must find better ways to reward teacher
 excellence and innovation expand access to more affordable as our
 economy becomes increasingly necessary to enter the workforce
 unfortunately rising tuition costs force the average borrower 17 500
@@ -46,7 +61,8 @@ disease control and epa to put train and deploy mixed teams depending
 on the particular environment we ve got about a thousand people out of
 their component either in a different direction the legislation before
 both the house and senate authorizing committees the subcommittee that
-is the way we work ```
+is the way we work
+```
 
 No punctuation, just words.
 
