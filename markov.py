@@ -8,6 +8,8 @@ class Markov:
         self.distribution = {}
         self.n = n
         self.populate_distribution()
+        self.words = []
+        [self.words.extend(d.words) for d in self.corpus.docs]
 
     def n_grams(self):
         """
@@ -39,7 +41,13 @@ class Markov:
 
         for i in xrange(length):
             generated.append(phrase[0])
-            next = random.choice(self.distribution[tuple(phrase[1:])])
+            key = tuple(phrase[1:])
+            if key in self.distribution.keys():
+                # pick a word if we have a history
+                next = random.choice(self.distribution[tuple(phrase[1:])])
+            else:
+                # otherwise, it's a uniform distribution
+                next = random.choice(self.words)
             phrase = phrase[1:] + (next,)
 
         generated.append(phrase[0])
