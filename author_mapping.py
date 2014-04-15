@@ -12,4 +12,3 @@ mapping = [(' '.join([author['name']['first'],
                       author['name']['last']]),
             author['id']['votesmart'],) for author in data]
 mapping = dict(mapping)
-

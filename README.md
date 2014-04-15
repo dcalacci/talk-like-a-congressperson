@@ -9,9 +9,14 @@ to have a little fun with it.
 
 ## To Use:
 
-Right now, there's no 'main script'. You have to run some methods in a python interpreter.
+```
+python talk-like-a-congressman.Pu
+```
+Then go to `http://127.0.0.1:5000`
 
-To do this, import the modules:
+--
+
+To run it on the command line, you have to use the python functions:
 
 ```python
 import corpus
