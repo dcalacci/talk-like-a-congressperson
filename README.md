@@ -7,14 +7,32 @@ I'm working with this data as part of the
 [lazer lab](http://www.lazerlab.net) at Northeastern University, so I decided
 to have a little fun with it.
 
-## To Use:
+## Usage
+
+### Web
+
+Install the requirements:
 
 ```
-python talk-like-a-congressman.Pu
+pip install -r requirements.txt
+```
+
+```
+python talk-like-a-congressman.py
 ```
 Then go to `http://127.0.0.1:5000`
 
+
+### API (I guess?)
+The URLs are nice enough that you can probably use this as an API, if you really want.
+url format:
+
+```
+talk-like-a-congressperson.herokuapp.com/congressperson/<VoteSmart id>/generate/<ngram length>/<generated text length>
+```
+
 --
+### Local
 
 To run it on the command line, you have to use the python functions:
 
@@ -69,7 +87,13 @@ both the house and senate authorizing committees the subcommittee that
 is the way we work
 ```
 
-No punctuation, just words.
+No punctuation, just words. This is an artifact from how I generated
+the corpus.
+
+The script that takes the pandas dataframe I have with all the
+statements in the dataset and converts it to the format needed for
+this project literally takes days to complete, so making the generated
+text better is really a matter of me running the script again.
 
 
 ## A little documentation
@@ -110,6 +134,7 @@ m = Markov(corpus, 3)
 
 where `corpus` is a corpus object, and `3` is the length of n-grams to use.
 
-to generate text, call `Markov.generate(l)`, where `l` is the length of the text you want to generate.
+to generate text, call `Markov.generate(l)`, where `l` is the length
+of the text you want to generate.
 
 
