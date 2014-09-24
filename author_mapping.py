@@ -13,6 +13,6 @@ mapping = [(' '.join([author['name']['first'],
                       author['name']['last']]),
             author['id']['votesmart'],) for author in data]
 
-mapping = [(k,v) for (k,v) in mapping if str(v) in os.listdir('corpora')]
+mapping = [(k,v) for (k,v) in mapping if str(v) in os.listdir('/var/www/talk-like-a-congressperson/static/corpora')]
 
 mapping = dict(mapping)
