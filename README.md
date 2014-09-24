@@ -1,6 +1,8 @@
 talk-like-a-congressman
 =======================
 
+http://talk-like-a-congressperson.dcalacci.net/
+
 n-gram models trained on congressional public speech data.
 
 I'm working with this data as part of the
@@ -28,7 +30,7 @@ The URLs are nice enough that you can probably use this as an API, if you really
 url format:
 
 ```
-talk-like-a-congressperson.herokuapp.com/congressperson/<VoteSmart id>/generate/<ngram length>/<generated text length>
+talk-like-a-congressperson.dcalacci.net/congressperson/<VoteSmart id>/generate/<ngram length>/<generated text length>
 ```
 
 --
