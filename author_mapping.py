@@ -5,7 +5,7 @@ import os
 
 # open the author info from yaml data.
 # this is only data for congresspeople with votesmart IDs.
-stream = open('static/author-mapping/votesmart.yml', 'rb')
+stream = open('/var/www/talk-like-a-congressperson/static/author-mapping/votesmart.yml', 'rb')
 data = yaml.load(stream)
 
 # create dictionary of Name -> VoteSmart ID
