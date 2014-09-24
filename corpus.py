@@ -27,6 +27,7 @@ class Corpus:
 
 
 def read_data(corpus_path, vocab_path):
+    print "looking for file at:", corpus_path
     if not os.path.exists(corpus_path):
         print "couldn't find file - try again!"
         return
@@ -35,6 +36,7 @@ def read_data(corpus_path, vocab_path):
     corpus_name = os.path.basename(corpus_path).split('.')[0]
     corpus_name = re.sub(corpus_name, "_", " ")
 
+    print "looking for vocab at:", vocab_path
     # get vocab list
     vocab = [word for word in open(vocab_path, 'rb').read().split()]
 

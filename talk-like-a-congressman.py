@@ -31,8 +31,8 @@ def uh_text(author_id):
 
 @app.route('/congressperson/<int:author_id>/generate/<int:ngram>/<int:length>')
 def generate_text(author_id, ngram, length):
-    c = corpus.read_data('corpora/' + str(author_id) + '/corpus.txt',
-                         'vocab.txt')
+    c = corpus.read_data('/var/www/talk-like-a-congressperson/static/corpora/' + str(author_id) + '/corpus.txt',
+                         '/var/www/talk-like-a-congressperson/static/vocab.txt')
     m = markov.Markov(c, ngram)
 
     return m.generate(length)
