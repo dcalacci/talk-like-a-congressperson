@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 import os
 
-statements = pd.read_csv('fun_statements_subset.csv')
+statements = pd.read_csv('static/fun_statements_subset.csv')
 
-vocab = [word for word in open('vocab.txt', 'rb').readline().split()]
+vocab = [word for word in open('static/vocab.txt', 'rb').readline().split()]
 
 gb = statements.groupby('author_id')
 
